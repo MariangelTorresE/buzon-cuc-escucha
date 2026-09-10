@@ -14,6 +14,98 @@
       <p>Facultad de Ingeniería - Universidad de la Costa</p>
     </header>
 
+    <form>
+      <!-- 1. Datos Personales e Identificación -->
+      <div class="grupo">
+        <label for="nombre">Nombre completo</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ej. Laura Gómez"
+          required
+        />
+      </div>
+
+      <div class="grupo">
+        <label for="documento"
+          >Documento de identidad / Código estudiantil</label
+        >
+        <input
+          type="text"
+          id="documento"
+          name="documento"
+          placeholder="Ej. 1001234567"
+          required
+        />
+      </div>
+
+      <div class="grupo">
+        <label for="correo">Correo institucional</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="usuario@cuc.edu.co"
+          required
+        />
+      </div>
+
+      <!-- 2. Vinculación Institucional -->
+      <div class="grupo">
+        <label for="rol">Rol en la institución</label>
+        <select id="rol" name="rol" required>
+          <option value="">Seleccione su rol</option>
+          <option value="estudiante">Estudiante</option>
+          <option value="docente">Docente</option>
+          <option value="egresado">Egresado</option>
+          <option value="administrativo">Administrativo</option>
+        </select>
+      </div>
+
+      <div class="grupo">
+        <label for="programa">Programa académico o dependencia</label>
+        <input
+          type="text"
+          id="programa"
+          name="programa"
+          placeholder="Ej. Ingeniería de Sistemas"
+          required
+        />
+      </div>
+
+      <!-- 3. Solicitud y Mensaje -->
+      <div class="grupo">
+        <label for="servicio">Categoría de la sugerencia</label>
+        <select id="servicio" name="servicio" required>
+          <option value="">Seleccione una opción</option>
+          <option value="bienestar">Bienestar y Servicios</option>
+          <option value="academico">Clases y Procesos Académicos</option>
+          <option value="infraestructura">Espacios e Infraestructura</option>
+          <option value="inclusion">Inclusión y Diversidad</option>
+          <option value="otro">Otra opción</option>
+        </select>
+      </div>
+
+      <div class="grupo">
+        <label for="fecha">Fecha de envío</label>
+        <input type="date" id="fecha" name="fecha" required />
+      </div>
+
+      <div class="grupo">
+        <label for="mensaje">Detalle de tu sugerencia o idea</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="4"
+          placeholder="Escribe aquí tu sugerencia para mejorar la Facultad..."
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit">Enviar sugerencia</button>
+    </form>
+
     <main>
       <section class="contenedor">
         <h2>Déjanos tu sugerencia o idea</h2>
